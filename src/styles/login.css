@@ -1,6 +1,6 @@
 .loginBox {
     height: 100vh;
-    background-image: url('/public/wall0.gif');
+    background-image: url('/public/wall1.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,9 +13,96 @@
     place-items: center;
 }
 
-.loginBox > main > div {
+.pokedex {
+    position: relative;
     background-image: url('/public/pokedex.jpg');
     height: 525px;
     width: 350px;
     border-radius: 13px;
+    animation: scale 0.5s linear;
 }
+
+.pokedex > span {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 13px;
+    left: 36px;
+}
+
+.pokedex > p {
+    margin-top: 100px;
+    padding: 0 45px;
+    text-align: center;
+}
+
+.pokedex > input {
+    position: absolute;
+    width: 305px;
+    height: 21px;
+    bottom: 110px;
+    left: 23px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.pokedex > div {
+    position: absolute;
+    background-image: url(/public/gif1.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    bottom: 24px;
+    left: 107px;
+    width: 155px;
+    height: 72px;
+}
+
+.pokedex button {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    bottom: 32px;
+    right: 25px;
+    border-radius: 50%;
+}
+
+.bx-check {
+    font-size: 25px;
+    color: red;
+}
+
+.bx:hover {
+    cursor: pointer;
+}
+
+.loading {
+    /* animation: shine 0.5s infinite;
+    transition-duration: 1s; */
+    /* transform: scale(5); */
+    animation: shine 0.5s infinite;
+}
+
+@keyframes shine {
+    from {
+        background-color: black;
+    } to {
+        background-color: transparent;
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0.5);
+    } to {
+        transform: scale(1);
+    }
+}
+
+

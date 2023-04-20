@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const usernameSlice = createSlice({
-		name: 'username',
+    name: 'username',
     initialState: '',
     reducers: {
-        getUsername: ( state, action) => {
+        getUsername: (state, action) => {
             const username = action.payload;
             return username;
         }
